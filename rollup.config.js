@@ -114,15 +114,15 @@ export default [
   // EcmaScript Module (esm) build
   // - Keeping console.log statements
   // - All external packages are not bundled
-  {
-    input,
-    output: { file: pkg.module, format: 'esm' },
-    external: excludeAllExternals,
-    plugins: [
-      json(),
-      resolve({ extensions }),
-      babel(getBabelOptions({ useESModules: true })),
-      sizeSnapshot(snapshotArgs),
-    ],
-  },
+  // {
+  //   input,
+  //   output: { file: pkg.module, format: 'esm' },
+  //   external: excludeAllExternals,
+  //   plugins: [
+  //     json(),
+  //     resolve({ extensions }),
+  //     babel(getBabelOptions({ useESModules: true })),
+  //     sizeSnapshot(snapshotArgs),
+  //   ],
+  // },
 ];
